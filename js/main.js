@@ -15,7 +15,6 @@ async function fetchData() {
         }
         const json = await response.json();
 
-        console.log(json);
         profile.src = json.avatar_url;
         name.innerText = json.name;
         repository.innerText = json.public_repos;
